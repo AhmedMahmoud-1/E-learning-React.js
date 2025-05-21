@@ -262,3 +262,8 @@ export const revokeObjectUrls = (course) => {
     });
   }
 };
+
+//admin
+export function getCours() {
+  return JSON.parse(localStorage.getItem("cours")) || [];
+};

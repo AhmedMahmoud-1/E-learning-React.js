@@ -16,6 +16,7 @@ import ProfesseurCours from "./components/teacherStudent/ProfesseurCours";
 import HomeTeacher from "./components/teacherStudent/HomeTeacher";
 import PrivateRoute from "./components/PrivateRoute";
 
+import Admin from './components/Admin/Admin';
 const App = () => {
   return (
     <Router>
@@ -59,7 +60,7 @@ const App = () => {
           } 
         />
         <Route path="/teacher/courses" element={<ProfesseurCours />} />
-
+        <Route path="/admin" element={<Admin />} />
 
       </Routes>
     </Router>

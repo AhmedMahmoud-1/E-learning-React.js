@@ -48,3 +48,11 @@ export const updateProfileImage = (email, imageUrl) => {
   }
   return false;
 };
+
+///lol
+export function getProfesseurs() {
+  return JSON.parse(localStorage.getItem("professeurs")) || [];
+};
+export function getEtudiants() {
+  return JSON.parse(localStorage.getItem("etudiants")) || [];
+};
